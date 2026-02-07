@@ -1,0 +1,38 @@
+
+main{
+    padding: 1rem;
+}
+#purpose-options-holder{
+    display: flex;
+    flex-direction: column;
+}
+#formHolder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#portraitHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 80%;
+}
+.form-question{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background-color: var(--body-bg);
+    color: var(--main-txt);
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 24px;
+    width: fit-content;
+}

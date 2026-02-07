@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Morgan's Magic Emporium</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"><img src="/img/logo.svg"></a>
+            <a href="/shop/">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#"><img src="/img/cart.svg"></a>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <main>
+            <section>    
+                <h1>Contact me</h1>
+                <p>Get a free quote for any custom enchantments, hexes or potions!</p>
+            </section>
+            <section id="formHolder">
+                <div id="portraitHolder">
+                    <img src="/img/wizard-orb.png" alt="wizard contemplating at his orb.">
+                </div>
+                <form>
+                    <div class="form-question">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-question">
+                        <label for="tel">Phone</label>
+                        <input type="tel" id="tel" name="email">
+                    </div>
+                    <div class="form-question">
+                        <p>Purpose*</p>
+                        <div id="purpose-options-holder">
+                            <div class="option">
+                                <input type="radio" id="enchantment-quote" name="purpose" value="enchantment-quote" required>
+                                <label for="enchantment-quote">Enchantment Quote</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="hex-quote" name="purpose" value="hex-quote" required>
+                                <label for="enchantment-quote">Hex Quote</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="potion-quote" name="purpose" value="potion-quote" required>
+                                <label for="potion-quote">Potion Quote</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="feedback" name="purpose" value="feedback" required>
+                                <label for="feedback">Feedback</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="other" name="purpose" value="other" required>
+                                <label for="other">Other:</label>
+                                <input type="text" id="other-write-in" name="other-write-in">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-question">
+                        <label for="details">Details*</label>
+                        <textarea id="details" name="details" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Send message</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <a href="/">Home</a>
+            <a href="/shop/">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Policies</a>
+        </footer>
+    </div>
+</body>
+</html>

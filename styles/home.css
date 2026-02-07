@@ -1,0 +1,64 @@
+
+section{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+}
+.text-holder{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+/* First section, introduction ("Magic You can Trust") */
+#intro .text-holder{
+    margin-top: 20px;
+}
+#intro img{
+    max-width: 240px;
+}
+#best-selling{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #123524;
+    background: linear-gradient(90deg, rgba(18, 53, 36, 0) 0%, rgba(18, 53, 36, 1) 20%, rgba(18, 53, 36, 1) 80%, rgba(18, 53, 36, 0) 100%);
+}
+#best-selling .button{
+    background-color: var(--header-txt);
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.carousel-item{
+    background-color: var(--main-txt);
+    color: var(--body-bg);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#enchantments img{
+    max-width: 350px;
+}
+#potions{
+    align-items: center;
+    gap: 0;
+}
+#potions .text-holder{
+    background-color: var(--main-txt);
+    color: var(--body-bg);
+}
+#potions img{
+    max-width: 350px;
+    border-radius: 35px;
+}
