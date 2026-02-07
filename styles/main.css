@@ -21,6 +21,9 @@ header{
     position: sticky;
     top: 0;
 }
+#logo{
+    min-width: 50px;
+}
 nav{
     display: flex;
     align-items: center;
