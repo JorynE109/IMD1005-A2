@@ -13,3 +13,6 @@ As I considered at the end of assignment 1, I changed the design for the buttons
 
 ## Ai Usage
 No generative Ai was used in the making of this project. Any graphics used were acquired from pinterest and confirmed to be human made. 
+
+## Note
+For the sake of time I was unable to make full mobile-first responsive design, but I tried media queries to make it somewhat more accessible to differently sized screens. 
