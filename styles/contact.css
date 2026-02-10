@@ -1,6 +1,5 @@
-
 main{
-    padding: 1rem;
+    padding-bottom: 100px;
 }
 #purpose-options-holder{
     display: flex;
@@ -15,6 +14,10 @@ main{
     justify-content: center;
     align-items: center;
 }
+#portraitHolder img{
+    outline: 3rem solid var(--main-txt);
+    height: 70%;
+}
 form{
     padding: 1rem;
     display: flex;
@@ -26,13 +29,26 @@ form{
     display: flex;
     flex-direction: column;
 }
-button{
-    background-color: var(--body-bg);
-    color: var(--main-txt);
-    border: none;
-    border-radius: 0;
-    padding: 0.5rem;
+input[type=text], input[type=number], input[type=email], textarea{
+    font-size: 1rem;
+    line-height: 1.5;
     font-family: "IBM Plex Serif", serif;
-    font-size: 24px;
-    width: fit-content;
+    background-color: var(--main-txt);
+    color: var(--body-bg);
+    border: 2px solid var(--body-bg);
+    outline: none;
+}
+input:is(:-webkit-autofill, :autofill, -internal-autofill-selected){
+    background-color: var(--light-bg)!important;
+    color: var(--body-bg)!important;
+    /* tried getting autofill styles worked out, but it's not working for whatever reason. */
+}
+input:active, input:focus{
+    border: solid 2px var(--header-txt);
+}
+
+@media screen and (max-width: 800px){
+    #formHolder{
+        grid-template-columns: 1fr;
+    }
 }

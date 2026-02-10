@@ -1,4 +1,10 @@
-
+main{
+    padding: 200px 0;
+    gap: 200px;
+}
+.border-image-left, .border-image-right{
+    margin-top: -200px;
+}
 section{
     display: flex;
     align-items: flex-start;
@@ -29,9 +35,6 @@ section{
     background: #123524;
     background: linear-gradient(90deg, rgba(18, 53, 36, 0) 0%, rgba(18, 53, 36, 1) 20%, rgba(18, 53, 36, 1) 80%, rgba(18, 53, 36, 0) 100%);
 }
-#best-selling .button{
-    background-color: var(--header-txt);
-}
 .carousel{
     display: flex;
     flex-direction: row;
@@ -61,4 +64,14 @@ section{
 #potions img{
     max-width: 350px;
     border-radius: 35px;
+}
+@media screen and (max-width: 800px){
+    .carousel{
+        flex-direction: column;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
