@@ -67,7 +67,7 @@ main{
     background-color: var(--main-bg);
 }
 .border-image-left, .border-image-right{
-    background-image: url('/img/frameside-L.png');
+    background-image: url('../img/frameside-L.png');
     background-repeat: repeat-y;
     min-width: 28px;
     height: 100%;
@@ -76,7 +76,7 @@ main{
     z-index: 9;
 }
 .border-image-right{
-    background-image: url('/img/frameside-R.png');
+    background-image: url('../img/frameside-R.png');
     right: 0;
 }
 .button{
