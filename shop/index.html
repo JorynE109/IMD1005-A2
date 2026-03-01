@@ -15,11 +15,16 @@
 <body>
     <header>
         <nav>
-            <a href="../" id="logo"><img src="../img/logo.svg"></a>
-            <a href="#">Shop</a>
-            <a href="#">About</a>
-            <a href="../contact/">Contact</a>
-            <a href="#"><img src="../img/cart.svg"></a>
+            <div id="navIconHolder">
+                <a href="/" id="logo"><img src="/img/logo.svg"></a>
+                <a href="#" id="cart"><img src="/img/cart.svg"></a>
+                <a href="#" id="hamburger"><img src="/img/hamburger.svg"></a>
+            </div>
+            <div id="mobileShrink">
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="/contact/">Contact</a>
+            </div>
         </nav>
     </header>
     <div id="wrapper">
@@ -37,48 +42,6 @@
                     <a href="#">Books</a>
                     <a href="#">Spells</a>
                 </div>
-                <div class="gallery-item">
-                    <img src="../img/potion-1.png" alt="purple potion in a round vial">
-                    <p class="img-label">Potion of Courage</p>
-                    <p class="price">$22</p>
-                    <a href="#" class="button">Add to Cart</a>
-                    <a href="#" class="button inverted hidden hover-show">Details</a>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/potion-9.png" alt="purple potion in a round vial">
-                    <p class="img-label">Potion of Health</p>
-                    <p class="price">$22</p>
-                    <a href="#" class="button">Add to Cart</a>
-                    <a href="#" class="button inverted hidden hover-show">Details</a>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/potion-3.png" alt="purple potion in a round vial">
-                    <p class="img-label">Potion of Luck</p>
-                    <p class="price">$22</p>
-                    <a href="#" class="button">Add to Cart</a>
-                    <a href="#" class="button inverted hidden hover-show">Details</a>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/potion-8.png" alt="purple potion in a round vial">
-                    <p class="img-label">Potion of Strength</p>
-                    <p class="price">$22</p>
-                    <a href="#" class="button">Add to Cart</a>
-                    <a href="#" class="button inverted hidden hover-show">Details</a>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/potion-4.png" alt="purple potion in a round vial">
-                    <p class="img-label">Potion of Love</p>
-                    <p class="price">$22</p>
-                    <a href="#" class="button">Add to Cart</a>
-                    <a href="#" class="button inverted hidden hover-show">Details</a>
-                </div>
-                <div class="gallery-item">
-                    <img src="../img/potion-2.png" alt="purple potion in a round vial">
-                    <p class="img-label">Potion of Wealth</p>
-                    <p class="price">$22</p>
-                    <a href="#" class="button">Add to Cart</a>
-                    <a href="#" class="button inverted hidden hover-show">Details</a>
-                </div>
             </section>
         </main>
         <div class="blur-footer-reveal"></div>
@@ -90,6 +53,8 @@
             <a href="#">Policies</a>
         </footer>
     </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/shop.js"></script>
     
 </body>
 </html>

@@ -35,6 +35,10 @@ nav a{
     color: var(--header-txt);
     font-size: 64px;
 }
+nav a img{
+    width: 100%;
+    height: 100%;
+}
 h1{
   font-family: "Italiana", sans-serif;
   font-size: 64px;
@@ -141,13 +145,14 @@ main{
     background: -moz-linear-gradient(180deg,rgba(115, 139, 127, 1) 0%, rgba(115, 139, 127, 0) 100%);
     background: linear-gradient(180deg, rgba(115, 139, 127, 1) 0%, rgba(115, 139, 127, 0) 100%);
     z-index: 1;
+    pointer-events: none;
 }
 footer{
     z-index: -1;
     position: fixed;
     bottom: 0;
     left: 50%;
-    min-width: 1400px;
+    width: 100%;
     padding: 1rem;
     transform: translateX(-50%);
     background-color: var(--main-txt);
@@ -161,8 +166,107 @@ footer a{
     color: var(--body-bg);
     text-decoration: none;
 }
-@media screen and (max-width: 800px){
-    nav a{
-        font-size: 32px;
+#hamburger{
+    max-width: 50px;
+    display: none;
+}
+#hamburger img{
+    width: 100%;
+}
+#navIconHolder{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#navIconHolder a{
+    min-width: 50px;
+}
+#mobileShrink{
+    display: flex;
+    gap: 2rem;
+    z-index: 99;
+    width: 70%;
+    justify-content: space-around;
+}
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        height: fit-content;
     }
+    nav a{
+        font-size: 38px;
+    }
+    #navIconHolder a{
+        max-width: 50px;
+    }
+    #cart{
+        width: 50px;
+    }
+    #hamburger{
+        display: block;
+        z-index: 99;
+    }
+    #hamburger img{
+        height: 50px;
+    }
+    #navIconHolder{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+    }
+    #navIconHolder a{
+        display: flex;
+        align-items: center;
+    }
+    #mobileShrink{
+        display: none;
+        transition: all 200ms ease;
+        scale: 0;
+        gap: 0;
+    }
+    #mobileShrink.show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        scale: 1;
+    }
+    #cart{
+        position: absolute;
+        right: 20%;
+        transform: translateX(100px);
+        transition: transform 200ms ease, opacity 200ms;
+        opacity: 0;
+    }
+    #cart.show{
+        transform: none;
+        opacity: 1;
+
+    }
+    .blur-footer-reveal{
+        height: 100px;
+        margin-bottom: 200px;
+
+    }
+    footer{
+        flex-direction: column-reverse;
+        padding-top: 200px;
+    }
+}
+@media screen and (max-width: 386px){
+    #cart{
+        right: 30%;
+    }
+}
+@media screen and (max-width: 342px){
+    .border-image-left, .border-image-right{
+        display: none;
+    }
+    
 }

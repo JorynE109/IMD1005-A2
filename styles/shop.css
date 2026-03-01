@@ -30,9 +30,6 @@ main{
 }
 #productSelection a.active{
     font-weight: 600;
-    background-color: var(--main-bg);
-    color: var(--main-txt);
-
 }
 #gallery{
     width: 100%;
@@ -101,16 +98,34 @@ main{
     scale: 1;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 979px){
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    #productSelection{
+        grid-column: span 2;
+        flex-direction: column;
+        border-radius: 30px;
+        height: 4rem;
+    }
+    #productSelection a:not(.active){
+        display: none;
+    }
+    .gallery-item{
+        width: 100%;
+        margin: auto;
+        width: auto;
+        height: fit-content;
+    }
+    .hover-show{
+        scale: 1;
+    }
+}
+@media screen and (max-width: 768px){
     #gallery{
         grid-template-columns: 1fr;
     }
     #productSelection{
         grid-column: span 1;
-        flex-direction: column;
-        border-radius: 30px;
-    }
-    .gallery-item{
-        width: 100%;
     }
 }

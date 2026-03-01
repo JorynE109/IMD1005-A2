@@ -1,0 +1,50 @@
+{
+    "potion":
+    [
+        {
+            "src": "/img/potion/potion-1.png",
+            "title": "Potion of Courage",
+            "price": 22
+        },
+        {
+            "src": "/img/potion/potion-2.png",
+            "title": "Potion of Health",
+            "price": 25
+        },
+        {
+            "src": "/img/potion/potion-3.png",
+            "title": "Potion of Luck",
+            "price": 43
+        },
+        {
+            "src": "/img/potion/potion-4.png",
+            "title": "Potion of Strength",
+            "price": 12
+        },
+        {
+            "src": "/img/potion/potion-5.png",
+            "title": "Potion of Love",
+            "price": 69
+        },
+        {
+            "src": "/img/potion/potion-6.png",
+            "title": "Potion of Wealth",
+            "price": 128
+        },
+        {
+            "src": "/img/potion/potion-7.png",
+            "title": "Potion of Fire",
+            "price": 897
+        },
+        {
+            "src": "/img/potion/potion-9.png",
+            "title": "Potion of Frog",
+            "price": 934
+        },
+        {
+            "src": "/img/potion/potion-8.png",
+            "title": "Potion of Death",
+            "price": 1228
+        }
+    ]
+}
