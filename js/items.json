@@ -1,5 +1,5 @@
 {
-    "potion":
+    "potions":
     [
         {
             "src": "/img/potion/potion-1.png",
@@ -45,6 +45,31 @@
             "src": "/img/potion/potion-8.png",
             "title": "Potion of Death",
             "price": 1228
+        }
+    ],
+    "artifacts":
+    [
+        {
+            "src": "/img/potion/potion-1.png",
+            "title": "boo",
+            "price": "87"
+        }
+    ],
+    "books":
+    [
+        {
+            "src": "/img/potion/potion-2.png",
+            "title": "book 1",
+            "price": "92"
+
+        }
+    ],
+    "spells":
+    [
+        {
+            "src": "/img/potion/potion-3.png",
+            "title": "spell",
+            "price": "24"
         }
     ]
 }
