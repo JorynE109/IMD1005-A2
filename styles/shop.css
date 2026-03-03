@@ -99,6 +99,7 @@ main{
 }
 select{
     margin: 0 5rem;
+    
 }
 
 @media screen and (max-width: 979px){
