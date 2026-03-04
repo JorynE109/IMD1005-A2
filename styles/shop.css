@@ -1,36 +1,6 @@
 main{
     gap: 1rem;
 }
-#productSelection{
-    background-color: var(--main-txt);
-    display: flex;
-    gap: 1rem;
-    padding: 0.2rem;
-    justify-content: space-between;
-    border-radius: 50px;
-    grid-column: span 3;
-    width: 92.7%;
-    margin: auto;
-}
-#productSelection a{
-    text-decoration: none;
-    padding: 1rem 3rem;
-    border: 1px solid var(--body-bg);
-    background: rgba(253, 243, 243, 0.522);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-radius: 50px;
-    color: var(--body-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    line-height: 1;
-    cursor: pointer;
-}
-#productSelection a.active{
-    font-weight: 600;
-}
 #gallery{
     width: 100%;
     padding: 2rem;
@@ -97,9 +67,47 @@ main{
 .gallery-item:hover .hover-show{
     scale: 1;
 }
-select{
-    margin: 0 5rem;
-    
+/*-------------------------
+Product selection
+----------------------------*/
+#productSelection{
+    background-color: var(--main-txt);
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border-radius: 50px;
+    grid-column: span 3;
+    width: calc(100% - 6rem);
+    margin: 3rem;
+    overflow: hidden;
+}
+#productSelection button{
+    font-family: "IBM Plex Serif", serif;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: 1px solid var(--body-bg);
+    background: rgba(253, 243, 243, 0.522);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 50px;
+    color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    line-height: 1;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 400;
+    outline: solid 2px #ffffff00;
+}
+button#productSelectedDefaultButton{
+    display: none;
+}
+#productSelection button.active{
+    font-weight: 700;
+    outline: solid 2px var(--body-bg);
 }
 
 @media screen and (max-width: 979px){
@@ -123,6 +131,16 @@ select{
     }
     .hover-show{
         scale: 1;
+    }
+    button.productSelectCategory:not(#productSelectedDefaultButton){
+        display: none;
+    }
+    button.productSelectCategory:not(#productSelectedDefaultButton).show{
+        display: flex;
+    }
+    button#productSelectedDefaultButton{
+        display: flex;
+        text-transform: capitalize;
     }
 }
 @media screen and (max-width: 768px){

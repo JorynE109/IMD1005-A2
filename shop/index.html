@@ -35,12 +35,17 @@
                 <h1>Shop</h1>
                 <p>Browse all my wares</p>
             </section>
-            <select id="productType">
-                <option value="potions">Potions</option>
-                <option value="artifacts">Artifacts</option>
-                <option value="books">Books</option>
-                <option value="spells">Spells</option>
-            </select>
+            <div id="productSelection">
+                <button onclick="toggleButtons()" class="productSelectCategory" id="productSelectedDefaultButton">All</button>
+                <button onclick="productSelected('all')" class="productSelectCategory" data-category="all">All</button>
+                <button onclick="productSelected('potions')" class="productSelectCategory" data-category="potions">Potions</button>
+                <button onclick="productSelected('artifacts')" class="productSelectCategory" data-category="artifacts">Artifacts</button>
+                <button onclick="productSelected('books')" class="productSelectCategory" data-category="books">Books</button>
+                <button onclick="productSelected('spells')" class="productSelectCategory" data-category="spells">Spells</button>
+            </div>
+
+            <section id="gallery">
+            </section>
         </main>
         <div class="blur-footer-reveal"></div>
         <footer>
@@ -53,6 +58,17 @@
     </div>
     <script src="/js/main.js"></script>
     <script src="/js/shop.js"></script>
-    
+    <script> // trying to use buttons instead of select
+        // const productTypeButton = document.querySelectorAll('productSelectCategory');
+
+        // productTypeButton.forEach(button=>{
+        //     console.log(button);
+        //     button.addEventListener("click", (e) =>{
+        //         console.log(button.data.category + " selected!");
+        //     });
+        // })
+
+        
+    </script>
 </body>
 </html>

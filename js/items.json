@@ -50,16 +50,33 @@
     "artifacts":
     [
         {
-            "src": "/img/potion/potion-1.png",
-            "title": "boo",
+            "src": "/img/artifact/artifact-1.png",
+            "title": "artifact 1",
             "price": "87"
+        },
+        {
+            "src": "/img/artifact/artifact-2.png",
+            "title": "artifact 2",
+            "price": "56"
         }
     ],
     "books":
     [
         {
-            "src": "/img/potion/potion-2.png",
+            "src": "/img/book/book-1.png",
             "title": "book 1",
+            "price": "92"
+
+        },
+        {
+            "src": "/img/book/book-2.png",
+            "title": "book 2",
+            "price": "92"
+
+        },
+        {
+            "src": "/img/book/book-3.png",
+            "title": "book 3",
             "price": "92"
 
         }
@@ -67,8 +84,23 @@
     "spells":
     [
         {
-            "src": "/img/potion/potion-3.png",
+            "src": "/img/spell/spell-1.png",
             "title": "spell",
+            "price": "24"
+        },
+        {
+            "src": "/img/spell/spell-2.png",
+            "title": "spell 2",
+            "price": "24"
+        },
+        {
+            "src": "/img/spell/spell-3.png",
+            "title": "spell 3",
+            "price": "24"
+        },
+        {
+            "src": "/img/spell/spell-4.png",
+            "title": "spell 4",
             "price": "24"
         }
     ]
