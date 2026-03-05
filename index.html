@@ -71,6 +71,13 @@
                 </div>
                 <img src="img/wizard-pour.png">
             </section>
+            <section id="wisdom">
+                <h2>Words of Wisdom</h2>
+                <div id="wisdomQuote">
+                    <blockquote cite="author">quote</blockquote>
+                    <cite>author</cite>
+                </div>
+            </section>
             <section id="FAQ">
                 <img src="/img/wizard-smoking.jpg">
                 <div class="text-holder">
@@ -105,12 +112,12 @@
     </div>
     <script src="/js/main.js"></script>
     <script>
-        var accordionButton = document.querySelectorAll(".accordion");
+        const accordionButton = document.querySelectorAll(".accordion");
 
         accordionButton.forEach(button=>{
         button.addEventListener("click", function(){
             this.classList.toggle("active");
-            var panel = this.nextElementSibling;
+            const panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
             } else {
@@ -118,6 +125,25 @@
             }
         })
         })
+    </script>
+    <script>
+        const quoteHolder = document.getElementById("wisdomQuote");
+        let quoteJSON = [];
+        async function fetchItems(){
+            const res = await fetch('https://api.quotable.io/quotes/random');
+            const data = await res.json();
+            if(res.ok) quoteJSON = data;
+            console.log(quoteJSON);
+            updateQuote();
+        }
+        function updateQuote(){
+            quote = quoteJSON[0];
+            quoteHolder.innerHTML = `
+                <blockquote cite="${quote.author}">"${quote.content}"</blockquote>
+                <cite>${quote.author}</cite>
+            `;
+        }
+        fetchItems();
     </script>
 </body>
 </html>

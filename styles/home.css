@@ -134,6 +134,22 @@ AccordionFAQ
 .active:after {
   content: "—"; 
 }
+#wisdom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#wisdomQuote{
+    max-width: 50%;
+}
+#wisdomQuote cite{
+    font-style: italic;
+}
+#wisdomQuote cite::before{
+    content: "—";
+    padding: 0 1rem;
+}
 
 @media screen and (max-width: 768px){
     .carousel{
