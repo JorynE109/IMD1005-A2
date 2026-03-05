@@ -106,7 +106,6 @@ const searchBar = document.getElementById("search");
 // }
 
 searchBar.addEventListener('submit', (event)=>{
-    event.preventDefault();
     searchItems();
 })
 function searchItems(){
@@ -120,6 +119,33 @@ function searchItems(){
     allItemTypes.forEach(itemType=>{
         if (items[itemType]){
             dataFiltered.push(items[itemType].find(({title})=> title.toLowerCase() === search.toLowerCase()));
+            //console.log(items[itemType].find(({title})=> title.toLowerCase() === search.toLowerCase()))
+            if (itemType.toLowerCase() === search.toLowerCase()){
+                //console.log(items[itemType]);
+                items[itemType].forEach(object=>{
+                    console.log(object);
+                    dataFiltered.push(object);
+                });
+            };
+            // console.log(items[itemType]
+            //     .find(({title})=> title.toLowerCase().search(search.toLowerCase()))
+            // );
+            // console.log(items[itemType]
+            //     .find(({description})=> description.toLowerCase().search(search.toLowerCase()))
+            // );
+            // console.log(items[itemType].description);
+            items[itemType].forEach(item=>{
+                //console.log(item.title.toLowerCase().search(search.toLowerCase()));
+                if ((item.title.toLowerCase().search(search.toLowerCase())) >= 0){
+                    dataFiltered.push(item);
+                }
+                else if ((item.description.toLowerCase().search(search.toLowerCase())) >= 0){
+                    dataFiltered.push(item);
+                }
+                else if (item.price === search){
+                    dataFiltered.push(item);
+                }
+            })
         };
     });
     // let testArray = ['hey', 'hi', 'wat'];

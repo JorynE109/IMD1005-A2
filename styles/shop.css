@@ -80,6 +80,7 @@ Product selection
     grid-column: span 3;
     width: calc(100% - 6rem);
     margin: 3rem;
+    margin-top: 0;
     overflow: hidden;
 }
 #productSelection button{
@@ -111,11 +112,28 @@ button#productSelectedDefaultButton{
 }
 
 #searchBarHolder{
-    margin: auto;
+    width: 100%;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: flex-end;
 }
 #searchBarHolder form{
     display: flex;
     font-size: 18px;
+    height: calc(18px*2);
+}
+#searchBarHolder form button{
+    margin: 0;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: none;
+}
+#searchBarHolder input{
+    border-radius: 2rem 0 0 2rem;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 200px;
+    padding: 0 1rem;
 }
 
 @media screen and (max-width: 979px){
