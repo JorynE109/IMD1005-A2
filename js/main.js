@@ -7,7 +7,6 @@ window.addEventListener('load', function(){
         navLinkHolder.classList.toggle('show');
         cartIcon.classList.toggle('show');
     })
-
 });
 
 let mybutton = document.getElementById("topBtn");
@@ -28,3 +27,4 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+

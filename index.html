@@ -69,6 +69,28 @@
                 </div>
                 <img src="img/wizard-pour.png">
             </section>
+            <section id="FAQ">
+                <img src="/img/wizard-smoking.jpg">
+                <div class="text-holder">
+                    <h2>Frequently Asked</h2>
+                    <div id="accordionFAQ">
+                        <button class="accordion">What is your return policy?</button>
+                        <div class="panel">
+                            <p>We accept returns for full refund on any item in excellent condition.</p>
+                        </div>
+
+                        <button class="accordion">What is your delivery standard?</button>
+                        <div class="panel">
+                            <p>With each order comes a free teleportation from me-to-you! Your order will arrive at your address within seconds of placement.</p>
+                        </div>
+
+                        <button class="accordion">Are your potions vegan?</button>
+                        <div class="panel">
+                            <p>I have many vegan potion options, however some use animal products. Look for the "V" Label on the <a href="/shop/">Shop Page</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <div class="blur-footer-reveal"></div>
         <footer>
@@ -80,5 +102,20 @@
         </footer>
     </div>
     <script src="/js/main.js"></script>
+    <script>
+        var accordionButton = document.querySelectorAll(".accordion");
+
+        accordionButton.forEach(button=>{
+        button.addEventListener("click", function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        })
+        })
+    </script>
 </body>
 </html>
