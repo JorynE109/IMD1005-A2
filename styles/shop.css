@@ -110,6 +110,14 @@ button#productSelectedDefaultButton{
     outline: solid 2px var(--body-bg);
 }
 
+#searchBarHolder{
+    margin: auto;
+}
+#searchBarHolder form{
+    display: flex;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 979px){
     #gallery{
         grid-template-columns: 1fr 1fr;
