@@ -23,9 +23,21 @@ section{
 /* First section, introduction ("Magic You can Trust") */
 #intro .text-holder{
     margin-top: 20px;
+    gap: 0;
 }
 #intro img{
     max-width: 240px;
+}
+#intro sub{
+    font-style: italic;
+}
+#intro q{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #12352443;
+}
+h1{
+    line-height: 0.9;
 }
 #best-selling{
     flex-direction: column;

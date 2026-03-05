@@ -51,32 +51,32 @@
     [
         {
             "src": "/img/artifact/artifact-1.png",
-            "title": "artifact 1",
-            "price": "87"
+            "title": "Frost Knife",
+            "price": "487"
         },
         {
             "src": "/img/artifact/artifact-2.png",
-            "title": "artifact 2",
-            "price": "56"
+            "title": "Crystal Glock",
+            "price": "2356"
         }
     ],
     "books":
     [
         {
             "src": "/img/book/book-1.png",
-            "title": "book 1",
+            "title": "Spellcrafting",
             "price": "92"
 
         },
         {
             "src": "/img/book/book-2.png",
-            "title": "book 2",
+            "title": "Herbology",
             "price": "92"
 
         },
         {
             "src": "/img/book/book-3.png",
-            "title": "book 3",
+            "title": "Alchemy",
             "price": "92"
 
         }
@@ -85,22 +85,22 @@
     [
         {
             "src": "/img/spell/spell-1.png",
-            "title": "spell",
+            "title": "Protection Spell",
             "price": "24"
         },
         {
             "src": "/img/spell/spell-2.png",
-            "title": "spell 2",
+            "title": "Courage Spell",
             "price": "24"
         },
         {
             "src": "/img/spell/spell-3.png",
-            "title": "spell 3",
+            "title": "Luck Spell",
             "price": "24"
         },
         {
             "src": "/img/spell/spell-4.png",
-            "title": "spell 4",
+            "title": "Love Spell",
             "price": "24"
         }
     ]

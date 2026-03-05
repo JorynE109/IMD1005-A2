@@ -9,6 +9,7 @@ window.addEventListener("load", (event) => {
         itemType = localStorage.getItem("itemType");
     }
     updateDefaultButton();
+    updateActiveButton();
     fetchItems();
 });
 async function fetchItems(){
