@@ -29,7 +29,7 @@ form{
     display: flex;
     flex-direction: column;
 }
-input[type=text], input[type=number], input[type=email], textarea{
+input, textarea{
     font-size: 1rem;
     line-height: 1.5;
     font-family: "IBM Plex Serif", serif;
@@ -46,7 +46,18 @@ input:is(:-webkit-autofill, :autofill, -internal-autofill-selected){
 input:active, input:focus{
     border: solid 2px var(--header-txt);
 }
-
+#stringLength.invalid{
+    color: rgb(173, 12, 12);
+}
+.error-message{
+    color:  var(--main-txt);
+    font-size: 0.8rem;
+    background-color: rgb(173, 12, 12);
+    padding: 3px;
+}
+.hidden{
+    display: none;
+}
 @media screen and (max-width: 768px){
     #formHolder{
         grid-template-columns: 1fr;
